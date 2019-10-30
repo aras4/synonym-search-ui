@@ -1,0 +1,62 @@
+/*Background colors*/
+
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+/*Text Colors*/
+$body-text-color: #444;
+$sidebar-text: white;
+$nju-sidebar-text: #333;
+
+$block-header-purple: #754690;
+$dark-purple: #662c76;
+$block-color: #f8f8f8;
+$menu-color: #999;
+$header-background: rgba(193, 193, 193, 0.42);
+$border-light: #f1eded;
+$field-disabled: #f5f5f5;
+$field-disabled-text: #a0a0a0;
+
+$stc-grey: #666;
+$stc-grey-light: tint($stc-grey, 30%);
+$stc-grey-extra-light: tint($stc-grey, 60%);
+$stc-grey-dark: #333;
+
+$stc-purple: #a0308c;
+$stc-yellow: #f7e47f;
+$nju-yellow: #fdcd00;
+
+/*Block Colors*/
+$border-color-dark: #767676;
+$block-border-color: #e5e5e5;
+$block-background-color: #ffffff;
+$block-header-background-color: rgb(240, 240, 240);
+$block-tree-background-color: #f2f2f2;
+$header-text-color: white;
+
+/*Input Color*/
+$input-border-focus-color: #b9c3e8;
+$input-border-required-color: #ffbfd5;
+$input-border-active-color: #5adc51;
+$input-background-color: rgb(250, 250, 250);
+$input-background-required-color: #ffd7e6;
+$input-background-active-color: #ccffd7;
+$input-button-back-color: #eaeaea;
+
+/*z-Popup Colors*/
+$popup-shade-color: rgba(0, 0, 0, 0.2);
+$popup-border-color: #ccc;
+$popup-background-color: rgb(250, 250, 250);
+$popup-header-background-color: rgb(240, 240, 240);
+$popup-header-icon-hover-color: rgb(230, 230, 230);
+
+/*Modal Colors*/
+$modal-footer-light-grey: #f0f0f0;
+$modal-footer-light-grey-2: #f2f2f2;
+$modal-footer-red: #f52520;
+$modal-footer-green: #18b853;
+$modal-footer-purple: #265992;
