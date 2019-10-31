@@ -1,3 +1,5 @@
+<button title="Remove all words" *ngIf="words[0]" type="button" (click)="deleteAll()"
+    class="btn btn-outline-danger btn-sm"><i class="fa fa-times" aria-hidden="true"></i></button>
 <div class="word" *ngFor="let item of words">
     <h3>{{item.word}}</h3>
     <span *ngFor="let synonym of item.synonyms">

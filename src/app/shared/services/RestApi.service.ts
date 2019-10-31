@@ -34,7 +34,7 @@ export class RestApiService {
             );
     }
 
-    delete(url: string, data: any): Observable<any> {
+    delete(url: string, data?: any): Observable<any> {
         return this.http.delete(this.query(this.getServicePath(url), data), this.httpOptions)
             .pipe(
                 catchError(this.handleError)

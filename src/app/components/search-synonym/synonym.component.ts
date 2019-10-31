@@ -36,4 +36,12 @@ export class SynonymContainerComponent implements OnInit {
     getAll() {
         this.synonymService.getAll().subscribe(response => this.words = response.payload);
     }
+
+    deleteAll() {
+        this.synonymService.removeAll().subscribe(response => {
+            this.words = [];
+            this.toastr.success(response.payload);
+        });
+    }
+
 }

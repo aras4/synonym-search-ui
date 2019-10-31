@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SynonymContainerComponent } from './synonym.component';
 import { SharedModule } from 'app/shared/shared.module';
 import { AddFormComponent, ViewAllComponent } from '.';
-import { ChipsModule } from 'primeng/chips';
+import { ChipsModule } from 'primeng/primeng';
 
 const routes: Routes = [
     { path: '', component: SynonymContainerComponent }
@@ -17,4 +17,4 @@ const routes: Routes = [
     ],
     declarations: [SynonymContainerComponent, AddFormComponent, ViewAllComponent],
 })
-export class SynonymSearchModule { } 
+export class SynonymSearchModule { }   

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { WordResponse } from 'app/shared/model/WordResponse.class';
 
 @Component({
@@ -10,7 +10,12 @@ import { WordResponse } from 'app/shared/model/WordResponse.class';
 export class ViewAllComponent {
 
     @Input() words: WordResponse[] = [];
+    @Output() onDelete = new EventEmitter();
 
     constructor() { }
+
+    deleteAll() {
+        this.onDelete.emit();
+    }
 
 }

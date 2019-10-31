@@ -24,4 +24,8 @@ export class SynonymService {
         return this.api.get<string[]>('search', [word]);
     }
 
+    removeAll() {
+        return this.api.delete('word');
+    }
+
 }
