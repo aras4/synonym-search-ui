@@ -1,0 +1,27 @@
+<div class="main-wrap">
+    <div class="left-box">
+        <section class="submit-form">
+            <add-word-form (onSave)="saveNewWord($event)"></add-word-form>
+        </section>
+        <form class="righ-box">
+            <div class="inner-form">
+                <div class="input-field first-wrap">
+                    <input id="search" type="text" [(ngModel)]="searchWord" [ngModelOptions]="{standalone: true}"
+                        (keyUp.enter)="searchForWord()" placeholder="What are you looking for?" />
+                </div>
+                <div class="input-field third-wrap">
+                    <button (click)="searchForWord()" class="btn-search" type="button">SEARCH</button>
+                </div>
+            </div>
+            <div class="search-results">
+                <ul>
+                    <li *ngFor="let item of results">{{item}}</li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <div class="right-box">
+        <view-all-words [words]="words"></view-all-words>
+    </div>
+
+</div>

@@ -1,4 +1,8 @@
 export class WordResponse {
     word: string;
-    synonyms:string[];
+    synonyms: string[];
+
+    constructor() {
+        this.synonyms = [];
+    }
 }

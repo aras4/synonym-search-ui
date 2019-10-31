@@ -12,7 +12,9 @@ export class RestApiService {
     private httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' }) };
 
     private services = {
-        allSynonyms: 'synonyms/words'
+        allSynonyms: 'synonyms/words',
+        word: 'synonyms/word',
+        search: 'synonyms/search'
     };
 
     constructor(private http: HttpClient) { }

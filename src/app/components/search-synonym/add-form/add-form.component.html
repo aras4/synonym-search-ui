@@ -1,0 +1,10 @@
+<div class="form-group">
+    <label>Enter new word:</label>
+    <input type="text" [(ngModel)]="newWord.word" class="form-control">
+</div>
+<div class="form-group">
+    <label>Enter synonms for a word: </label>
+    <p-chips [(ngModel)]="newWord.synonyms" class="chips"></p-chips>
+</div>
+<button type="button" [disabled]="!newWord.word || !newWord.synonyms[0]" (click)="saveNewWord()"
+    class="btn btn-outline-primary">Save</button>

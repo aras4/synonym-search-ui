@@ -1,0 +1,17 @@
+
+    h3 {
+        margin: 0;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .word {
+        padding: 5px 10px;
+    }
+    span {
+        font-style: italic;
+        &::after{
+            content: ",";
+        }
+        &:last-child::after {
+            content: "";
+        }
+    }

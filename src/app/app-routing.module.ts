@@ -5,8 +5,15 @@ import { RouterModule } from '@angular/router';
   imports:
     [
       RouterModule.forRoot([
-        { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-        // { path: 'lead', loadChildren: './pages/lead/lead.module#LeadModule' }
+        {
+          path: 'home',
+          loadChildren: './components/search-synonym/search.synonym.module#SynonymSearchModule'
+        },
+        {
+          path: '',
+          redirectTo: '/home',
+          pathMatch: 'full'
+        },
 
       ])
     ],

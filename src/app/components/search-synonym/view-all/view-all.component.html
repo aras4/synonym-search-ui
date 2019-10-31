@@ -1,0 +1,6 @@
+<div class="word" *ngFor="let item of words">
+    <h3>{{item.word}}</h3>
+    <span *ngFor="let synonym of item.synonyms">
+        {{synonym}}
+    </span>
+</div>
